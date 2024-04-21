@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  background-color: var(--Light-Grayish-Cyan-Background);
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+:root {
+  --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-Filter-Tablets: hsl(0, 0%, 100%);
+  --DarkGrayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+}
+/* to header */
+.headerBackground {
+  background-color: var(--Desaturated-Dark-Cyan);
+}
+
+/* to table */
+.tablemaindata{
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--Light-Grayish-Cyan-Background);
+}
+table>tr{
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+
+}
+.tabledataRow{
+    width: 100%;
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+}
+/* to coder name */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
