@@ -8,7 +8,7 @@ body {
   background-color: var(--Light-Grayish-Cyan-Background);
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
 :root {
@@ -25,23 +25,94 @@ body {
 
 /* to table */
 .tablemaindata{
+  margin-top: 80px;
     margin-left: 80px;
     margin-right: 80px;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: var(--Light-Grayish-Cyan-Background);
 }
-table>tr{
+.table{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+.tablefirst{
+  gap: 3%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+  border-radius: 5px;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.toolname{
+  display: flex;
+  gap: 10px;
+}
+.Photoshop{
+  color: var(--Desaturated-Dark-Cyan);
+  padding: 8px;
+}
+.new{
+  height: 30px;
+  width: 70px;
+  background-color: var(--Desaturated-Dark-Cyan);
+  padding: 8px;
+  border-radius: 20px;
+  text-align: center;
+  color: var(--Light-Grayish-Cyan-Filter-Tablets);
+}
+.feature{
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  padding: 8px;
+  border-radius: 20px;
+  height: 30px;
+  width: 90px;
+padding-left: 14px;
+color: var(--Light-Grayish-Cyan-Filter-Tablets);
+}
+.timeAndPlace{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+}
+.timeAndPlace>p{
+  color: var(--DarkGrayish-Cyan);
+}
+.professionname{
+  padding: 8px;
+  font-size: 24px;
+  color: var(--Very-Dark-Grayish-Cyan);
 
 }
-.tabledataRow{
-    width: 100%;
-  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+.skillname
+{
+  display: flex;
+  gap: 20px;
+  margin-left: 21%;
+}
+.skillname >p{
+  background-color: var(--Light-Grayish-Cyan-Background);
+  padding: 13px;
+  border-radius: 5px;
+  color: var(--Desaturated-Dark-Cyan);
+}
+
+
+.borderLeft{
+  border-left: 5px solid var(--Desaturated-Dark-Cyan);
 }
 /* to coder name */
 .attribution {
-  font-size: 11px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 15px;
   text-align: center;
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
