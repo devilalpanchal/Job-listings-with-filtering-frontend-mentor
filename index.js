@@ -150,7 +150,7 @@ let fetchDetails = [
         "tools": ["React", "Sass"]
     }
 ]
-
+let languages
 const table = document.querySelector('.table');
 function fetchTable(arr, container) {
     const NewArray = arr.map((item) => {
@@ -193,36 +193,72 @@ function fetchTable(arr, container) {
           </div>
         </div >
         <div class="skillname">
-            <p>${role}</p>
-            <p>${level}</p>
-            ${languages.length ? languages.map(lang => `<p>${lang}</p>`).join('') : ''}
+            <p class="roles">${role}</p>
+            <p class="levels">${level}</p>
+            ${languages.length ? languages.map(lang => `<p class="language">${lang}</p>`).join('') : ''}
             ${tools.length ? tools.map(tool => `<p>${tool}</p>`).join('') : ''}
         </div>
       </div >
         `
     })
     container.innerHTML = NewArray.join(" ")
+    // to language
+    const languageTags = document.querySelectorAll('.language');
+    languageTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const selectedLanguage = tag.textContent;
+            filterByLanguage(selectedLanguage);
+        });
+    })
+
+    // to roles
+    const rolesname = document.querySelectorAll('.roles');
+    rolesname.forEach(tag1 => {
+        tag1.addEventListener('click', () => {
+            const selectedrole = tag1.textContent;
+            filterByRole(selectedrole);
+        });
+    })
+    // to levels
+    const levelname = document.querySelectorAll('.levels');
+    levelname.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const selectedlevel = tag.textContent;
+            filterByLevel(selectedlevel);
+        });
+    })
 
     let tablefirst = document.querySelector('.tablefirst');
-    console.log(tablefirst);
-    
     if (tablefirst.firstChild) {
-        // If the first child exists, add 'borderLeft' class to the tablefirst element
         console.log(tablefirst);
         tablefirst.classList.add('borderLeft');
     } else if (tablefirst.nextSibling) {
-        // If the first child doesn't exist, but a sibling does, add 'borderLeft' class to the sibling
         let secondChild = tablefirst.nextSibling;
         console.log(secondChild);
         secondChild.classList.add('borderLeft');
     } else {
-        // Handle the case where neither the first nor the second child exists
         console.log("No children or siblings found");
     }
-    
-    
-    
-  
-}
 
+}
+function filterByLanguage(language) {
+    const newArray = fetchDetails.filter(item => item.languages.includes(language));
+    fetchTable(newArray, table);
+}
 fetchTable(fetchDetails, table)
+function filterByRole(role) {
+    const newArray = fetchDetails.filter(item => item.role === role);
+    fetchTable(newArray, table);
+    roleParagraph.textContent = newArray.length > 0 ? newArray[0].role : '';
+}
+fetchTable(fetchDetails, table);
+function filterByLevel(level) {
+    const newArray = fetchDetails.filter(item => item.level === level);
+    fetchTable(newArray, table);
+}
+fetchTable(fetchDetails, table);
+
+const filterinto = document.querySelector('.filter')
+const roleParagraph = document.createElement('p');
+filterinto.appendChild(roleParagraph);
+
