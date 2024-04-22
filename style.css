@@ -11,6 +11,9 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+.hide{
+  display: none;
+}
 :root {
   --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
   --Light-Grayish-Cyan-Filter-Tablets: hsl(0, 0%, 100%);
@@ -101,10 +104,18 @@ color: var(--Light-Grayish-Cyan-Filter-Tablets);
   border-radius: 5px;
   color: var(--Desaturated-Dark-Cyan);
 }
-
-
 .borderLeft{
   border-left: 5px solid var(--Desaturated-Dark-Cyan);
+}
+/* to filter */
+.filter{
+  position: absolute;
+  top: 105px;
+  margin-left: 80px;
+  height: 100px;
+  width: 88%;
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+  border-radius: 5px;
 }
 /* to coder name */
 .attribution {

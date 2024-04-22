@@ -35,173 +35,293 @@ The designs were created to the following widths:
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
 <div>
-<!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+ <!-- <div class="tablefirst borderLeft">
+          <div>
+            <img src="./images/photosnap.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Photoshop</p>
+              <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p>
+            </div>
+            <div class="professionname">
+              Senior Frontend Developer
+            </div>
+            <div class="timeAndPlace">
+              <p>1d ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>USA ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Senior</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="tablefirst borderLeft">
+          <div>
+            <img src="./images/manage.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Manage</p>
+              <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p>
+            </div>
+            <div class="professionname">
+              Fullstack Developer
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+            </div>
+            <div class="timeAndPlace">
+              <p>1d ago</p>
+              <p>.</p>
+              <p>Part Time</p>
+              <p>.</p>
+              <p>Remote</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Fullstack</p>
+            <p>Midweight</p>
+            <p>React</p>
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/account.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Account</p>
+              <p class="new">NEW!</p>
+              <!-- <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Junior Frontend Developer
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+            </div>
+            <div class="timeAndPlace">
+              <p>2d ago</p>
+              <p>.</p>
+              <p>Part Time</p>
+              <p>.</p>
+              <p>USA ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Junior</p>
+            <p>React</p>
+            <p>Sass</p>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/myhome.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">MyHome</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Junior Frontend Developer
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  Item End
-</div>
+            </div>
+            <div class="timeAndPlace">
+              <p>5d ago</p>
+              <p>.</p>
+              <p>Contract</p>
+              <p>.</p>
+              <p>USA ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Junior</p>
+            <p>CSS</p>
+            <p>Java Script</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/loop-studios.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Loop Studias</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Software Engineer
+            </div>
+            <div class="timeAndPlace">
+              <p>1w ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Fullstack</p>
+            <p>Midweight</p>
+            <p>Java Script</p>
+            <p>Sass</p>
+            <p>Ruby</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/faceit.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Faceit</p>
+              <!-- <p class="new">NEW!</p> -->
+              <!-- <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Junior Backend Developer
+            </div>
+            <div class="timeAndPlace">
+              <p>2w ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>UK ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Backend</p>
+            <p>Junior</p>
+          <p>Ruby</p>
+            <p>RoR</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/shortly.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Shortly</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Junior Developer
+            </div>
+            <div class="timeAndPlace">
+              <p>2w ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Junior</p>
+            <p>HTML</p>
+            <p>Sass</p>
+            <p>Java Script</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/insure.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Insure</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Junior Frontend Developer
+            </div>
+            <div class="timeAndPlace">
+              <p>2w ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>USA ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Junior</p>
+            <p>Vue</p>
+            <p>Java Script</p>
+            <p>Sass</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/eyecam-co.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">Full Stack Engineer</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+              Full Stack Developer
+            </div>
+            <div class="timeAndPlace">
+              <p>2w ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>Worldwide</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Fullstack</p>
+            <p>Midweight</p>
+            <p>Java Script</p>
+            <p>Django</p>
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="tablefirst">
+          <div>
+            <img src="./images/the-air-filter-company.svg" alt="">
+          </div>
+          <div class="second">
+            <div class="toolname">
+              <p class="Photoshop">The Filter Company</p>
+              <!-- <p class="new">NEW!</p>
+              <p class="feature">FEATURED</p> -->
+            </div>
+            <div class="professionname">
+               Front-end Dev
+            </div>
+            <div class="timeAndPlace">
+              <p>1d ago</p>
+              <p>.</p>
+              <p>Full Time</p>
+              <p>.</p>
+              <p>USA ONLY</p>
+            </div>
+          </div>
+          <div class="skillname">
+            <p>Frontend</p>
+            <p>Junior</p>
+            <p>React</p>
+            <p>Sass</p>
+            <p>Java Script</p>
+          </div>
+        </div> -->
