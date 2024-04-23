@@ -240,6 +240,8 @@ function fetchTable(arr, container) {
         console.log("No children or siblings found");
     }
 
+
+    
 }
 function filterByLanguage(language) {
     const newArray = fetchDetails.filter(item => item.languages.includes(language));
