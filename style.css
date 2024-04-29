@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 15px;
   background-color: var(--Light-Grayish-Cyan-Background);
@@ -11,9 +12,11 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-.hide{
+
+.hide {
   display: none;
 }
+
 :root {
   --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
   --Light-Grayish-Cyan-Filter-Tablets: hsl(0, 0%, 100%);
@@ -21,24 +24,27 @@ body {
   --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
   --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
 }
+
 /* to header */
 .headerBackground {
   background-color: var(--Desaturated-Dark-Cyan);
 }
 
 /* to table */
-.tablemaindata{
+.tablemaindata {
   margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
-.table{
-width: 100%;
-display: flex;
-flex-direction: column;
-gap: 25px;
+
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.tablefirst{
+
+.tablefirst {
   gap: 3%;
   padding: 25px;
   display: flex;
@@ -46,20 +52,24 @@ gap: 25px;
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
   border-radius: 5px;
 }
-.second{
+
+.second {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.toolname{
+
+.toolname {
   display: flex;
   gap: 10px;
 }
-.Photoshop{
+
+.Photoshop {
   color: var(--Desaturated-Dark-Cyan);
   padding: 8px;
 }
-.new{
+
+.new {
   height: 30px;
   width: 70px;
   background-color: var(--Desaturated-Dark-Cyan);
@@ -68,47 +78,53 @@ gap: 25px;
   text-align: center;
   color: var(--Light-Grayish-Cyan-Filter-Tablets);
 }
-.feature{
+
+.feature {
   background-color: var(--Very-Dark-Grayish-Cyan);
   padding: 8px;
   border-radius: 20px;
   height: 30px;
   width: 90px;
-padding-left: 14px;
-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+  padding-left: 14px;
+  color: var(--Light-Grayish-Cyan-Filter-Tablets);
 }
-.timeAndPlace{
+
+.timeAndPlace {
   display: flex;
   gap: 10px;
   align-items: center;
   padding: 8px;
 }
-.timeAndPlace>p{
+
+.timeAndPlace>p {
   color: var(--DarkGrayish-Cyan);
 }
-.professionname{
+
+.professionname {
   padding: 8px;
   font-size: 24px;
   color: var(--Very-Dark-Grayish-Cyan);
-
 }
-.skillname
-{
+
+.skillname {
   display: flex;
   gap: 20px;
   margin-left: 21%;
 }
-.skillname >p{
+
+.skillname>p {
   background-color: var(--Light-Grayish-Cyan-Background);
   padding: 13px;
   border-radius: 5px;
   color: var(--Desaturated-Dark-Cyan);
 }
-.borderLeft{
+
+.borderLeft {
   border-left: 5px solid var(--Desaturated-Dark-Cyan);
 }
+
 /* to filter */
-.filter{
+.filter {
   padding: 20px;
   position: absolute;
   top: 105px;
@@ -117,7 +133,9 @@ color: var(--Light-Grayish-Cyan-Filter-Tablets);
   width: 88%;
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
   border-radius: 5px;
+  display: flex;
 }
+
 /* to coder name */
 .attribution {
   padding: 10px;
@@ -126,6 +144,7 @@ color: var(--Light-Grayish-Cyan-Filter-Tablets);
   text-align: center;
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

@@ -141,7 +141,7 @@ let fetchDetails = [
         "new": false,
         "featured": false,
         "position": "Front-end Dev",
-        //   "role": "Frontend",
+        "role": "Frontend",
         "level": "Junior",
         "postedAt": "1mo ago",
         "contract": "Part Time",
@@ -196,7 +196,7 @@ function fetchTable(arr, container) {
             <p class="roles">${role}</p>
             <p class="levels">${level}</p>
             ${languages.length ? languages.map(lang => `<p class="language">${lang}</p>`).join('') : ''}
-            ${tools.length ? tools.map(tool => `<p>${tool}</p>`).join('') : ''}
+            ${tools.length ? tools.map(tool => `<p  class="tolls" >${tool}</p>`).join('') : ''}
         </div>
       </div >
         `
@@ -219,6 +219,7 @@ function fetchTable(arr, container) {
             filterByRole(selectedrole);
         });
     })
+
     // to levels
     const levelname = document.querySelectorAll('.levels');
     levelname.forEach(tag => {
@@ -228,9 +229,19 @@ function fetchTable(arr, container) {
         });
     })
 
+
+    // to tools
+    const toolname = document.querySelectorAll('.tolls');
+    toolname.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const selectedtools = tag.textContent;
+            filterByTools(selectedtools);
+        });
+    })
+
     let tablefirst = document.querySelector('.tablefirst');
     if (tablefirst.firstChild) {
-        console.log(tablefirst);
+        // console.log(tablefirst);
         tablefirst.classList.add('borderLeft');
     } else if (tablefirst.nextSibling) {
         let secondChild = tablefirst.nextSibling;
@@ -240,27 +251,64 @@ function fetchTable(arr, container) {
         console.log("No children or siblings found");
     }
 
-
-    
 }
 function filterByLanguage(language) {
     const newArray = fetchDetails.filter(item => item.languages.includes(language));
     fetchTable(newArray, table);
+    addAndFilter()
+
+}
+function filterByTools(tool) {
+    const newArray = fetchDetails.filter(item => item.tools.includes(tool));
+    fetchTable(newArray, table);
+    addAndFilter()
 }
 fetchTable(fetchDetails, table)
 function filterByRole(role) {
     const newArray = fetchDetails.filter(item => item.role === role);
     fetchTable(newArray, table);
-    roleParagraph.textContent = newArray.length > 0 ? newArray[0].role : '';
+    addAndFilter()
 }
 fetchTable(fetchDetails, table);
 function filterByLevel(level) {
     const newArray = fetchDetails.filter(item => item.level === level);
     fetchTable(newArray, table);
+    addAndFilter()
 }
 fetchTable(fetchDetails, table);
 
-const filterinto = document.querySelector('.filter')
-const roleParagraph = document.createElement('p');
-filterinto.appendChild(roleParagraph);
 
+
+function addAndFilter() {
+    console.log("devilal")
+    let filterheader = document.querySelector('.filter')
+    const selectvalue = document.createElement('div')
+    selectvalue.style.width = " 120px"
+    selectvalue.style.height = " 50px"
+    selectvalue.style.padding = " 15px"
+    selectvalue.style.textAlign = " center"
+    selectvalue.style.borderRadius = " 5px 0px 0px 5px"
+    selectvalue.style.backgroundColor = "hsl(180, 52%, 96%)"
+    selectvalue.style.fontSize = "18px"
+    selectvalue.style.color = "hsl(180, 29%, 50%)"
+    selectvalue.innerText = " devilal"
+
+    let remove = document.createElement('div')
+    remove.style.backgroundColor = "hsl(180, 29%, 50%)"
+    remove.innerText = " x"
+    remove.style.width = "3%"
+    remove.style.height = "50px"
+    remove.style.textAlign = "center"
+    remove.style.fontSize = "25px"
+    remove.style.borderRadius = " 0px 5px 5px 0px"
+    remove.style.color = "white"
+    remove.style.padding = "11px"
+    remove.style.marginRight = "15px"
+    filterheader.appendChild(selectvalue)
+    filterheader.append(remove)
+    remove.addEventListener("click", () => {
+        remove.classList.toggle('hide')
+        selectvalue.classList.toggle('hide')
+        console.log("derfjsafjlsd")
+    })
+}
