@@ -202,12 +202,15 @@ function fetchTable(arr, container) {
         `
     })
     container.innerHTML = NewArray.join(" ")
+    let adddance = document.querySelector('.adddance')
+
     // to language
     const languageTags = document.querySelectorAll('.language');
     languageTags.forEach(tag => {
         tag.addEventListener('click', () => {
             const selectedLanguage = tag.textContent;
             filterByLanguage(selectedLanguage);
+            adddance.textContent = tag.textContent
         });
     })
 
@@ -217,6 +220,8 @@ function fetchTable(arr, container) {
         tag1.addEventListener('click', () => {
             const selectedrole = tag1.textContent;
             filterByRole(selectedrole);
+            adddance.textContent = tag1.textContent
+
         });
     })
 
@@ -226,6 +231,9 @@ function fetchTable(arr, container) {
         tag.addEventListener('click', () => {
             const selectedlevel = tag.textContent;
             filterByLevel(selectedlevel);
+            adddance.textContent = tag.textContent
+
+
         });
     })
 
@@ -236,12 +244,13 @@ function fetchTable(arr, container) {
         tag.addEventListener('click', () => {
             const selectedtools = tag.textContent;
             filterByTools(selectedtools);
+            adddance.textContent = tag.textContent
+
         });
     })
 
     let tablefirst = document.querySelector('.tablefirst');
     if (tablefirst.firstChild) {
-        // console.log(tablefirst);
         tablefirst.classList.add('borderLeft');
     } else if (tablefirst.nextSibling) {
         let secondChild = tablefirst.nextSibling;
@@ -283,6 +292,7 @@ function addAndFilter() {
     console.log("devilal")
     let filterheader = document.querySelector('.filter')
     const selectvalue = document.createElement('div')
+    selectvalue.classList.add('adddance')
     selectvalue.style.width = " 120px"
     selectvalue.style.height = " 50px"
     selectvalue.style.padding = " 15px"
@@ -291,7 +301,7 @@ function addAndFilter() {
     selectvalue.style.backgroundColor = "hsl(180, 52%, 96%)"
     selectvalue.style.fontSize = "18px"
     selectvalue.style.color = "hsl(180, 29%, 50%)"
-    selectvalue.innerText = " devilal"
+    // selectvalue.innerText = 'devilal '
 
     let remove = document.createElement('div')
     remove.style.backgroundColor = "hsl(180, 29%, 50%)"
