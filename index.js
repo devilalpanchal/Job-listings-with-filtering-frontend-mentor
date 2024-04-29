@@ -152,6 +152,7 @@ let fetchDetails = [
 ]
 let languages
 const table = document.querySelector('.table');
+fetchTable(fetchDetails, table)
 function fetchTable(arr, container) {
     const NewArray = arr.map((item) => {
         const {
@@ -203,6 +204,7 @@ function fetchTable(arr, container) {
     })
     container.innerHTML = NewArray.join(" ")
     let adddance = document.querySelector('.adddance')
+    console.log(adddance)
 
     // to language
     const languageTags = document.querySelectorAll('.language');
@@ -210,6 +212,8 @@ function fetchTable(arr, container) {
         tag.addEventListener('click', () => {
             const selectedLanguage = tag.textContent;
             filterByLanguage(selectedLanguage);
+            addAndFilter()
+            let adddance = document.querySelector('.adddance')
             adddance.textContent = tag.textContent
         });
     })
@@ -217,22 +221,35 @@ function fetchTable(arr, container) {
     // to roles
     const rolesname = document.querySelectorAll('.roles');
     rolesname.forEach(tag1 => {
+        console.log(tag1.textContent)
         tag1.addEventListener('click', () => {
             const selectedrole = tag1.textContent;
             filterByRole(selectedrole);
+            addAndFilter()
+            let adddance = document.querySelector('.adddance')
+
+            console.log(adddance)
             adddance.textContent = tag1.textContent
 
         });
     })
 
     // to levels
+    function filterByRole(role) {
+        const newArray = fetchDetails.filter(item => item.role === role);
+        fetchTable(newArray, table);
+        addAndFilter()
+    }
+    fetchTable(fetchDetails, table);
     const levelname = document.querySelectorAll('.levels');
     levelname.forEach(tag => {
         tag.addEventListener('click', () => {
             const selectedlevel = tag.textContent;
+            console.log(selectedlevel)
             filterByLevel(selectedlevel);
-            adddance.textContent = tag.textContent
-
+            addAndFilter()
+            let adddance = document.querySelector('.adddance')
+            adddance.textContent = selectedlevel
 
         });
     })
@@ -244,6 +261,9 @@ function fetchTable(arr, container) {
         tag.addEventListener('click', () => {
             const selectedtools = tag.textContent;
             filterByTools(selectedtools);
+            addAndFilter()
+            let adddance = document.querySelector('.adddance')
+            console.log(adddance)
             adddance.textContent = tag.textContent
 
         });
@@ -264,61 +284,66 @@ function fetchTable(arr, container) {
 function filterByLanguage(language) {
     const newArray = fetchDetails.filter(item => item.languages.includes(language));
     fetchTable(newArray, table);
-    addAndFilter()
-
 }
 function filterByTools(tool) {
     const newArray = fetchDetails.filter(item => item.tools.includes(tool));
     fetchTable(newArray, table);
-    addAndFilter()
 }
-fetchTable(fetchDetails, table)
 function filterByRole(role) {
     const newArray = fetchDetails.filter(item => item.role === role);
     fetchTable(newArray, table);
-    addAndFilter()
 }
-fetchTable(fetchDetails, table);
 function filterByLevel(level) {
     const newArray = fetchDetails.filter(item => item.level === level);
     fetchTable(newArray, table);
-    addAndFilter()
 }
-fetchTable(fetchDetails, table);
 
 
 
 function addAndFilter() {
-    console.log("devilal")
-    let filterheader = document.querySelector('.filter')
-    const selectvalue = document.createElement('div')
-    selectvalue.classList.add('adddance')
-    selectvalue.style.width = " 120px"
-    selectvalue.style.height = " 50px"
-    selectvalue.style.padding = " 15px"
-    selectvalue.style.textAlign = " center"
-    selectvalue.style.borderRadius = " 5px 0px 0px 5px"
-    selectvalue.style.backgroundColor = "hsl(180, 52%, 96%)"
-    selectvalue.style.fontSize = "18px"
-    selectvalue.style.color = "hsl(180, 29%, 50%)"
-    // selectvalue.innerText = 'devilal '
+    let adddance = document.querySelector('.adddance')
+    let remove = document.querySelector('.remove')
+    let newDi = document.querySelector('.newDiv')
+    if (newDi) {
+        newDi.classList.toggle('hide')
+        newDi.classList.remove('hide')
+    }
+    else {
+        console.log("devilal")
+        const newDiv = document.createElement('div')
+        newDiv.classList.add('newDiv')
 
-    let remove = document.createElement('div')
-    remove.style.backgroundColor = "hsl(180, 29%, 50%)"
-    remove.innerText = " x"
-    remove.style.width = "3%"
-    remove.style.height = "50px"
-    remove.style.textAlign = "center"
-    remove.style.fontSize = "25px"
-    remove.style.borderRadius = " 0px 5px 5px 0px"
-    remove.style.color = "white"
-    remove.style.padding = "11px"
-    remove.style.marginRight = "15px"
-    filterheader.appendChild(selectvalue)
-    filterheader.append(remove)
-    remove.addEventListener("click", () => {
-        remove.classList.toggle('hide')
-        selectvalue.classList.toggle('hide')
-        console.log("derfjsafjlsd")
-    })
+        let filterheader = document.querySelector('.filter')
+        const selectvalue = document.createElement('div')
+        selectvalue.classList.add('adddance')
+        selectvalue.style.width = " 120px"
+        selectvalue.style.height = " 50px"
+        selectvalue.style.padding = " 15px"
+        selectvalue.style.textAlign = " center"
+        selectvalue.style.borderRadius = " 5px 0px 0px 5px"
+        selectvalue.style.backgroundColor = "hsl(180, 52%, 96%)"
+        selectvalue.style.fontSize = "18px"
+        selectvalue.style.color = "hsl(180, 29%, 50%)"
+        let remove = document.createElement('div')
+        remove.style.backgroundColor = "hsl(180, 29%, 50%)"
+        remove.classList.add('remove')
+        remove.innerText = " x"
+        remove.style.width = "3%"
+        remove.style.height = "50px"
+        remove.style.textAlign = "center"
+        remove.style.fontSize = "25px"
+        remove.style.borderRadius = " 0px 5px 5px 0px"
+        remove.style.color = "white"
+        remove.style.padding = "11px"
+        remove.style.marginRight = "15px"
+        newDiv.appendChild(selectvalue)
+
+        newDiv.appendChild(remove)
+        filterheader.append(newDiv)
+        remove.addEventListener("click", () => {
+            remove.classList.toggle('hide')
+            selectvalue.classList.toggle('hide')
+            console.log("derfjsafjlsd")
+        })
+    }
 }
